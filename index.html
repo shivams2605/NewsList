@@ -26,7 +26,7 @@
         </div>
         <div class="news-item-container grid-view" id="news-item-container" ng-class="{ 'grid-view': gridView,'list-view': !gridView}">
             <div class="news-item" ng-repeat="newsArticle in newsData | orderBy:orderProperty | filter:searchText">
-                <div class="news-item_data" data-target="#myModal_{{$index}}" data-toggle="modal">
+                <div class="news-item_data clearfix" data-target="#myModal_{{$index}}" data-toggle="modal">
                     <div class="news_item_image">
                         <img ng-src="{{newsArticle.urlToImage}}"/>
                     </div>
